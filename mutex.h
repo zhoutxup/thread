@@ -5,6 +5,7 @@
 namespace yazi {
 namespace thread {
     class Mutex {
+        friend class Condition;//使用条件变量时需要使用锁
         public:
             Mutex();
             ~Mutex();
